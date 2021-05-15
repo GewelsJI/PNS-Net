@@ -1,25 +1,27 @@
 # PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation
 
+This repository provides code for "_**PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" MICCAI-2021 ([arXiv Version]() | [中文版]()). If you have any questions about our paper, feel free to contact me. And if you are using PraNet 
+or evaluation toolbox for your research, please cite this paper ([BibTeX](#4-citation)).
+
 > **Authors:** 
 > [Ge-Peng Ji](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
-> [Yu-Cheng Chou](), 
+> [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en), 
 > [Deng-Ping Fan](https://dpfan.net/), 
 > [Geng Chen](https://www.researchgate.net/profile/Geng_Chen13), 
 > [Huazhu Fu](http://hzfu.github.io/), 
-> [Debesh Jha](), 
+> [Debesh Jha](https://www.simula.no/people/debesh), &
 > [Ling Shao](http://www.inceptioniai.org/).
 
-## 1. Preface
+## Hightlights
 
-- This repository provides code for "_**PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" MICCAI-2021. 
-([paper]() | [中文版]())
-
-- If you have any questions about our paper, feel free to contact me. And if you are using PraNet 
-or evaluation toolbox for your research, please cite this paper ([BibTeX](#4-citation)).
-
+- **Hyper Real-time Speed**: Our method, named Progressively Normalized Self-Attention Network (PNS-Net), can efficiently learn representations from polyp videos with real-time speed (~140fps) on a single NVIDIA RTX 2080 GPU without any post-processing techniques (_e.g._, Dense-CRF).
+- **Plug-and-Play Module**: The proposed core module, termed as Normalized Self-attention (NS), which utlizes channel split,query-dependent, andnormalizationrules to reduce the computational cost and improve the accuracy, respectively. Note that this module can be flexiblely plugged into any framework customed.
+- **Cutting-edge Performance**: Experiments on three challenging video polyp segmentation (VPS) datasets demonstrate that the proposed PNS-Net achieves state-of-the-art performance. 
+- **One-key Evaluation Toolbox**: We release the first one-key evaluation toolbox in the VPS field.
 
 ### 1.1. 🔥NEWS🔥 :
-- [2021/03/] Create repository.
+- [2021/05/14] Our work is provisionally accepted at [MICCAI 2021](https://miccai2021.org/en/). Many thanks to the collaborator Yu-Cheng Chou and supervisor Prof. Deng-Ping Fan.
+- [2021/03/10] Create repository.
 
 
 ### 1.2. Table of Contents

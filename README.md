@@ -1,7 +1,8 @@
 # PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation
 
-This repository provides code for "_**PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" MICCAI-2021 ([arXiv Version]() | [中文版]()). If you have any questions about our paper, feel free to contact me. And if you are using PraNet 
-or evaluation toolbox for your research, please cite this paper ([BibTeX](#4-citation)).
+<img src="./imgs/VideoPresentation-min.gif" width="100%" />
+
+This repository provides code for "_**PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" MICCAI-2021 ([arXiv Version]() | [中文版]()). If you have any questions about our paper, feel free to contact me. And if you are using PraNet or evaluation toolbox for your research, please cite this paper ([BibTeX](#4-citation)).
 
 > **Authors:** 
 > [Ge-Peng Ji](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
@@ -26,22 +27,22 @@ or evaluation toolbox for your research, please cite this paper ([BibTeX](#4-cit
 
 ### 1.2. Table of Contents
 
-- [PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation (MICCAI 2021)](#pns-net-progressively-normalized-self-attention-network-for-video-polyp-segmentation)
-  * [1. Preface](#1-preface)
-    + [1.1. 🔥NEWS🔥](#11-news-)
-    + [1.2. Table of Contents](#12-table-of-contents)
-    + [1.3. State-of-the-art approaches](#13-SOTAs)
-  * [2. Overview](#2-overview)
-    + [2.1. Introduction](#21-introduction)
-    + [2.2. Framework Overview](#22-framework-overview)
-    + [2.3. Qualitative Results](#23-qualitative-results)
-  * [3. Proposed Baseline](#3-proposed-baseline)
-    + [3.1 Training/Testing](#31-training-testing)
-    + [3.2 Evaluating your trained model:](#32-evaluating-your-trained-model-)
-    + [3.3 Pre-computed maps:](#33-pre-computed-maps)
-  * [4. Citation](#4-citation)
-  * [5. TODO LIST](#5-todo-list)
-  * [6. FAQ](#6-faq)
+- [PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation](#pns-net-progressively-normalized-self-attention-network-for-video-polyp-segmentation)
+  - [Hightlights](#hightlights)
+    - [1.1. 🔥NEWS🔥 :](#11-news-)
+    - [1.2. Table of Contents](#12-table-of-contents)
+    - [1.3. State-of-the-art Approaches](#13-state-of-the-art-approaches)
+  - [2. Overview](#2-overview)
+    - [2.1. Introduction](#21-introduction)
+    - [2.2. Framework Overview](#22-framework-overview)
+    - [2.3. Qualitative Results](#23-qualitative-results)
+  - [3. Proposed Baseline](#3-proposed-baseline)
+    - [3.1. Training/Testing](#31-trainingtesting)
+    - [3.2 Evaluating your trained model:](#32-evaluating-your-trained-model)
+    - [3.3 Pre-computed maps:](#33-pre-computed-maps)
+  - [4. Citation](#4-citation)
+  - [5. TODO LIST](#5-todo-list)
+  - [6. FAQ](#6-faq)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 

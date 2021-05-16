@@ -2,8 +2,6 @@
 
 <img src="./imgs/VideoPresentation-min.gif" width="100%" />
 
-This repository provides code for "_**PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" MICCAI-2021 ([arXiv Version]() | [中文版]()). If you have any questions about our paper, feel free to contact me. And if you are using PraNet or evaluation toolbox for your research, please cite this paper ([BibTeX](#4-citation)).
-
 > **Authors:** 
 > [Ge-Peng Ji](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
 > [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en), 
@@ -12,6 +10,8 @@ This repository provides code for "_**PNS-Net: Progressively Normalized Self-Att
 > [Huazhu Fu](http://hzfu.github.io/), 
 > [Debesh Jha](https://www.simula.no/people/debesh), &
 > [Ling Shao](http://www.inceptioniai.org/).
+
+This repository provides code for "_**PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" MICCAI-2021 ([arXiv Version]() | [中文版]()). If you have any questions about our paper, feel free to contact me. And if you are using PraNet or evaluation toolbox for your research, please cite this paper ([BibTeX](#4-citation)).
 
 ## Hightlights
 

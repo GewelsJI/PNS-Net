@@ -154,12 +154,12 @@ They can be found in [download link]().
 
 Please cite our paper if you find the work useful: 
     
-  @article{ji2021pnsnet,
-  title={PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation},
-  author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Jha, Debesh and Fu, Huazhu and Shao, Ling},
-  journal={MICCAI},
-  year={2021}
-  }
+    @article{ji2021pnsnet,
+    title={PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation},
+    author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Jha, Debesh and Fu, Huazhu and Shao, Ling},
+    journal={MICCAI},
+    year={2021}
+    }
 
 ## 5. TODO LIST
 

@@ -3,8 +3,8 @@
 <img src="./imgs/VideoPresentation-min.gif" width="100%" />
 
 > **Authors:** 
-> [Ge-Peng Ji](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
-> [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en), 
+> [Ge-Peng Ji*](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
+> [Yu-Cheng Chou*](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en), 
 > [Deng-Ping Fan](https://dpfan.net/), 
 > [Geng Chen](https://www.researchgate.net/profile/Geng_Chen13), 
 > [Huazhu Fu](http://hzfu.github.io/), 

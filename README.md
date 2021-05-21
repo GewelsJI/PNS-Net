@@ -21,7 +21,7 @@ This repository provides code for "_**PNS-Net: Progressively Normalized Self-Att
 - **One-key Evaluation Toolbox**: We release the first one-key evaluation toolbox in the VPS field.
 
 ### 1.1. 🔥NEWS🔥 :
-- [2021/05/14] Our work is provisionally accepted at [MICCAI 2021](https://miccai2021.org/en/). Many thanks to the collaborator Yu-Cheng Chou and supervisor Prof. Deng-Ping Fan.
+- [2021/05/14] Our work is provisionally accepted at [MICCAI 2021](https://miccai2021.org/en/). Many thanks to my collaborator Yu-Cheng Chou and supervisor Prof. Deng-Ping Fan.
 - [2021/03/10] Create repository.
 
 

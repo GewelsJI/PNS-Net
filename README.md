@@ -115,7 +115,7 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     pip install tensorboardX tqdm Pillow==6.2.2
     ```
     
-    + Please ensure the base CUDA version is 10.0/10.1 (not at conda env), and then build the NS Block: 
+    + Please ensure the base [CUDA toolkit](https://developer.nvidia.com/cuda-toolkit-archive) version is 10.x (not at conda env), and then build the NS Block: 
 
     ```bash
     pip install git+https://github.com/pytorch/tnt.git@master

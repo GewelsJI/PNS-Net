@@ -104,11 +104,18 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     Note that PNS-Net is only tested on Ubuntu OS with the following environments. 
     It may work on other operating systems as well but we do not guarantee that it will.
     
-    + Creating a virtual environment in terminal: `conda create -n PNS-Net python=3.6`.
+    + Creating a virtual environment in terminal: 
+      
+    `conda create -n PNSNet python=3.6`.
     
-    + Installing necessary packages PyTorch 1.1: `conda install pytorch=1.1.0 torchvision -c pytorch`
+    + Installing necessary packages PyTorch 1.1: 
+      
+    ```bash
+    conda install pytorch=1.1.0 torchvision -c pytorch
+    pip install tensorboardX tqdm Pillow==6.2.2
+    ```
     
-    + Build NS Block
+    + Build NS Block: 
 
     ```bash
     pip install git+https://github.com/pytorch/tnt.git@master

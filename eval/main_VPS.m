@@ -22,11 +22,11 @@
 
 clear; close; clc;
 % set the path of sal/gt/results
-salDir = '../res/';
-Models = {'infer_pretrain','infer_finetune'};
+salDir = '/Volumes/Daniel-Ji/1-Research/2021-MICCAI-PolypVideoSegmentation/MICCAI-2021/Rebuttal/Result/';
+Models = {'PNS-Net'};
 %05','infer_021','infer_022','infer_023','infer_024','infer_025','infer_026','NestedUNet','UNet','PraNet-29','ACSNet','ResUNet++'
-gtDir = '../dataset/VPS-TestSet/';
-Datasets = {'CVC-ColonDB-300', 'CVC-ClinicDB-612-Test', 'CVC-ClinicDB-612-Valid'};
+gtDir = '/Volumes/Daniel-Ji/1-Research/2021-MICCAI-PolypVideoSegmentation/MICCAI-2021/Rebuttal/VPS-TestSet/';
+Datasets = {'Hybrid'};
 
 Results_Save_Path = './eval-Result/';
 

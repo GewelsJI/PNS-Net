@@ -57,7 +57,6 @@ doi: https://arxiv.org/pdf/1911.07067.pdf
 doi: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7329239/
 5. "U-Net: Convolutional networks for biomed- ical image segmentation" MICCAI, 2015.
 doi: https://arxiv.org/pdf/1505.04597.pdf
-6. continue updating...
 
 
 ## 2. Overview
@@ -198,5 +197,9 @@ etc.)
     [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
 
 ---
+
+## 7. Acknowledgements
+
+This code is built on SINetV2 ([PyTorch](https://github.com/GewelsJI/SINet-V2)) and PyramidCSA ([PyTorch](https://github.com/guyuchao/PyramidCSA)). We thank the authors for sharing the codes.
 
 **[⬆ back to top](#0-preface)**

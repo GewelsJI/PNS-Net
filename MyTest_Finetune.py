@@ -51,7 +51,7 @@ class Test_Dataset(Dataset):
             begin = 1
             while begin < len(li) - 1:
                 if len(li)-1 - begin <= self.time_clips:
-                    begin = len(li)-1 - self.time_clips
+                    begin = len(li) - self.time_clips
                 batch_clips = []
                 # batch_clips.append(li[0])
                 for t in range(self.time_clips):

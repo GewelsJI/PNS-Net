@@ -57,7 +57,6 @@ doi: https://arxiv.org/pdf/1911.07067.pdf
 doi: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7329239/
 5. "U-Net: Convolutional networks for biomed- ical image segmentation" MICCAI, 2015.
 doi: https://arxiv.org/pdf/1505.04597.pdf
-6. continue updating...
 
 
 ## 2. Overview

@@ -208,7 +208,6 @@ for  m = 1:length(Models)
         fprintf('(Dataset:%s) meanDic:%.3f;meanIoU:%.3f;wFm:%.3f;Sm:%.3f;meanEm:%.3f;MAE:%.3f;maxEm:%.3f;maxDice:%.3f;maxIoU:%.3f;meanSen:%.3f;maxSen:%.3f;meanSpe:%.3f;maxSpe:%.3f.\n',...
             videofolder,meanDic,meanIoU,video_wFm(videonum),video_Sm(videonum),meanEm,video_mae(videonum),maxEm,maxDic,maxIoU,meanSen,maxSen,meanSpe,maxSpe);
     end
-    
     fclose(fileID);
    
 end

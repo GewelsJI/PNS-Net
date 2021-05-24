@@ -3,6 +3,8 @@
 % 'Progressively Normalized Self-Attention Network for Video Polyp Segmentation',
 % Ge-Peng Ji, Yu-Cheng Chou, Deng-Ping Fan, Geng Chen, Debesh Jha, Huazhu Fu, Ling Shao
 %
+% Project Page: https://github.com/GewelsJI/PNS-Net
+%
 % It can only be used for non-comercial purpose. 
 % If you use our code, please cite our paper.
 % @InProceedings{Ji_2021_Progressively,
@@ -17,15 +19,13 @@
 % Version Control:
 % % 2021-03-01, Create the init version
 % This code is adopted from [DAVSOD](https://github.com/DengPingFan/DAVSOD) and re-organized by GePeng-Ji.
-% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear; close; clc;
-% set the path of sal/gt/results
-salDir = '/Volumes/Daniel-Ji/1-Research/2021-MICCAI-PolypVideoSegmentation/MICCAI-2021/Rebuttal/Result/';
-Models = {'PNS-Net'};
-%05','infer_021','infer_022','infer_023','infer_024','infer_025','infer_026','NestedUNet','UNet','PraNet-29','ACSNet','ResUNet++'
-gtDir = '/Volumes/Daniel-Ji/1-Research/2021-MICCAI-PolypVideoSegmentation/MICCAI-2021/Rebuttal/VPS-TestSet/';
+% set the path of polyp/gt/results
+PolypDir = '../res/';
+Models = {'UNet', 'PraNet', 'ResUNet++', 'PNS-Net'};
+gtDir = '../dataset/VPS-TestSet/';
 Datasets = {'Hybrid'};
 
 Results_Save_Path = './eval-Result/';
@@ -40,7 +40,7 @@ for  m = 1:length(Models)
     
     modelName = Models{m}
     
-    resVideoPath = [salDir modelName '/'];  % video saliency map for evaluated models
+    resVideoPath = [PolypDir modelName '/'];  % video saliency map for evaluated models
     
     videoFiles = dir(gtDir);
     
@@ -76,8 +76,7 @@ for  m = 1:length(Models)
             
             gt_imgPath = [seqPath seqfolder '/'];
             [fileNUM, gt_imgFiles, fileExt] = calculateNumber(gt_imgPath); %index of stop frame
-%             split_part = regexp(modelName, '-', 'split');
-%             resPath = [resVideoPath  split_part{3} '_' videofolder '/' seqfolder '/'];
+
             resPath = [resVideoPath videofolder '/Pred/' seqfolder '/'];
 
             [threshold_Fmeasure, threshold_Emeasure, threshold_IoU] = deal(zeros(fileNUM-2, length(Thresholds)));
@@ -86,7 +85,8 @@ for  m = 1:length(Models)
             [Smeasure, wFmeasure, MAE] =deal(zeros(1,fileNUM-2));
             
             tic;
-            for i = 2:fileNUM-1 % skip the first and last gt file for some of the light-flow based method
+            % NOTE: skip the first and last gt file for some of the light-flow based method
+            for i = 2:fileNUM-1
                 
                 name = char(gt_imgFiles{i});
                 fprintf('[Processing Info] Model: %s, Dataset: %s, SalSeq: %s (%d/%d), SalMapName: %s (%d/%d)\n',modelName, videofolder, seqfolder, seqnum, seqNUM, name, i-1, fileNUM-2);

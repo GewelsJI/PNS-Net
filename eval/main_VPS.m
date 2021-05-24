@@ -5,8 +5,7 @@
 %
 % Project Page: https://github.com/GewelsJI/PNS-Net
 %
-% It can only be used for non-comercial purpose. 
-% If you use our code, please cite our paper.
+% It can only be used for non-comercial purpose. If you like our work, please cite our paper.
 % @InProceedings{Ji_2021_Progressively,
 %    author = {Fan, Deng-Ping and Wang, Wenguan and Cheng, Ming-Ming and Shen, Jianbing}, 
 %    title = {Progressively Normalized Self-Attention Network for Video Polyp Segmentation},

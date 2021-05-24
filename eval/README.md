@@ -6,7 +6,7 @@ Our project page is at [website](http://dpfan.net/pranet/).
 
 # Usage
 
-Please set the candidate method and dataset name in [Line-27]() and [Line-29], respectively. 
+Please set the candidate method and dataset name in [Line-27]() and [Line-29](), respectively. 
 You guys first need to install the Matlab first.
 To this end， you just run 
 

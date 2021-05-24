@@ -25,7 +25,7 @@ clear; close; clc;
 PolypDir = '../res/';
 Models = {'UNet', 'PraNet', 'ResUNet++', 'PNS-Net'};
 gtDir = '../dataset/VPS-TestSet/';
-Datasets = {'Hybrid'};
+Datasets = {'CVC-ColonDB-300', 'CVC-ClinicDB-612-Valid', 'CVC-ClinicDB-612-Test'};
 
 Results_Save_Path = './eval-Result/';
 
@@ -211,4 +211,3 @@ for  m = 1:length(Models)
     fclose(fileID);
    
 end
-

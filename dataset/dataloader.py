@@ -1,14 +1,14 @@
 import os
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset
 from dataset.preprocess import *
 from PIL import Image
 import torch
 from config import config
 
 
-##pretrain_dataset
+# pretrain dataset
 class Pretrain(Dataset):
-    def __init__(self, img_dataset_list, video_dataset_list, transform):
+    def __init__(self, img_dataset_list, transform):
         self.file_list = []
         for dataset in img_dataset_list:
             data_dir = config.img_dataset_root + dataset
@@ -44,15 +44,15 @@ def get_pretrain_dataset():
         toTensor(),
         Normalize(statistics["mean"], statistics["std"])
     ])
-    train_loader = Pretrain(config.img_dataset_list, config.video_dataset_list, transform=trsf_main)
+    train_loader = Pretrain(config.img_dataset_list, transform=trsf_main)
 
     return train_loader
 
 
+# finetune dataset
 class VideoDataset(Dataset):
     def __init__(self, video_dataset_list, transform=None, time_interval=1):
         super(VideoDataset, self).__init__()
-        # self.video_filelist=video_dataset_list
         self.time_clips = config.video_time_clips
         self.video_train_list = []
 
@@ -73,15 +73,13 @@ class VideoDataset(Dataset):
                         os.path.join(cls_label_path, filename.replace(".jpg", ".png"))
                     ))
 
-            # emsemble
+            # ensemble
             for cls in cls_list:
                 li = self.video_filelist[cls]
                 for begin in range(1, len(li) - (self.time_clips - 1) * time_interval - 1):
                     batch_clips = []
-                    # batch_clips.append(li[0])
                     for t in range(self.time_clips):
                         batch_clips.append(li[begin + time_interval * t])
-                    # batch_clips.append(li[-1])
                     self.video_train_list.append(batch_clips)
             self.img_label_transform = transform
 

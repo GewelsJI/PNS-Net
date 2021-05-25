@@ -2,7 +2,7 @@ import os
 from PIL import Image
 from torch.utils.data import DataLoader, Dataset
 from torchvision.transforms import ToTensor, Compose, Resize
-from lib.PNS_Network import PNSNet
+from lib.PNS_Network import PNSNet as Network
 import torch
 import numpy as np
 from tqdm import tqdm
@@ -96,7 +96,7 @@ class AutoTest:
         self.dataloader = {}
         for dst in self.test_dataset:
             self.dataloader[dst] = DataLoader(Test_Dataset(data_root, dst), batch_size=1, shuffle=False, num_workers=8)
-        self.model = Fastnet().cuda()
+        self.model = Network().cuda()
         state_dict = torch.load(model_path, map_location=torch.device('cpu'))
         self.tag_dir = 'res/PNS-Net/'
         self.model.load_state_dict(state_dict)

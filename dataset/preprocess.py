@@ -133,7 +133,7 @@ class toTensor(object):
         return img, label
 
 
-#####################################################video################################
+################################video################################
 class Random_crop_Resize_Video(object):
     def _randomCrop(self, img, label, x, y):
         width, height = img.size

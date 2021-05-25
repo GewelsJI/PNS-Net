@@ -2,7 +2,7 @@ import os
 import torch
 import torch.nn.functional as F
 from datetime import datetime
-from lib.PNS_Network import Fastnet as Network
+from lib.PNS_Network import PNSNet as Network
 from utils.dataloader import get_video_dataset
 from utils.utils import clip_gradient, adjust_lr
 import logging
@@ -58,13 +58,13 @@ def train(train_loader, model, optimizer, epoch, save_path):
 
         os.makedirs(os.path.join(save_path, "epoch_%d" % (epoch + 1)), exist_ok=True)
         save_root = os.path.join(save_path, "epoch_%d" % (epoch + 1))
-        torch.save(model.state_dict(), os.path.join(save_root, "PNS_Finetune.pth"))
+        torch.save(model.state_dict(), os.path.join(save_root, "PNS-Finetune.pth"))
 
     except KeyboardInterrupt:
         print('Keyboard Interrupt: save model and exit.')
         if not os.path.exists(save_path):
             os.makedirs(save_path)
-        torch.save(model.state_dict(), save_path + 'Net_epoch_{}.pth'.format(epoch + 1))
+        torch.save(model.state_dict(), save_path + 'Net-epoch_{}.pth'.format(epoch + 1))
         print('Save checkpoints successfully!')
         raise
 

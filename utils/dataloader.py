@@ -1,15 +1,15 @@
 import os
-from torch.utils.data import Dataset,DataLoader
+from torch.utils.data import Dataset
 from dataset.preprocess import *
 from PIL import Image
 import torch
 from config import config
 
 
-##pretrain_dataset
+# pretrain_dataset
 class Pretrain(Dataset):
-    def __init__(self,img_dataset_list,video_dataset_list,transform):
-        self.file_list=[]
+    def __init__(self, img_dataset_list, video_dataset_list, transform):
+        self.file_list = []
         for dataset in img_dataset_list:
             data_dir = config.img_dataset_root + dataset
             gt_path = data_dir + '/GT/'
@@ -25,7 +25,7 @@ class Pretrain(Dataset):
         img = Image.open(img_path).convert('RGB')
         label = Image.open(label_path).convert('L')
         img, label = self._process(img, label)
-        return img,label
+        return img, label
 
     def _process(self, img, label):
         img, label = self.img_label_transform(img, label)
@@ -37,52 +37,53 @@ class Pretrain(Dataset):
 
 def get_pretrain_dataset():
     statistics = torch.load(config.data_statistics)
-    trsf_main=Compose_imglabel([
-        Resize(config.size[0],config.size[1]),
+    trsf_main = Compose_imglabel([
+        Resize(config.size[0], config.size[1]),
         Random_crop_Resize(15),
         Random_horizontal_flip(0.5),
         toTensor(),
-        Normalize(statistics["mean"],statistics["std"])
+        Normalize(statistics["mean"], statistics["std"])
     ])
-    train_loader=Pretrain(config.img_dataset_list, config.video_dataset_list, transform=trsf_main)
+    train_loader = Pretrain(config.img_dataset_list, config.video_dataset_list, transform=trsf_main)
 
     return train_loader
 
+
 class VideoDataset(Dataset):
-    def __init__(self,video_dataset_list, transform=None, time_interval=1):
+    def __init__(self, video_dataset_list, transform=None, time_interval=1):
         super(VideoDataset, self).__init__()
         # self.video_filelist=video_dataset_list
-        self.time_clips=config.video_time_clips
+        self.time_clips = config.video_time_clips
         self.video_train_list = []
 
         for video_name in video_dataset_list:
-            video_root=os.path.join(config.video_dataset_root, video_name, 'Train')
-            cls_list=os.listdir(video_root)
-            self.video_filelist={}
+            video_root = os.path.join(config.video_dataset_root, video_name, 'Train')
+            cls_list = os.listdir(video_root)
+            self.video_filelist = {}
             for cls in cls_list:
-                self.video_filelist[cls]=[]
-                cls_path=os.path.join(video_root,cls)
-                cls_img_path=os.path.join(cls_path,"Frame")
-                cls_label_path=os.path.join(cls_path,"GT")
-                tmp_list=os.listdir(cls_img_path)
+                self.video_filelist[cls] = []
+                cls_path = os.path.join(video_root, cls)
+                cls_img_path = os.path.join(cls_path, "Frame")
+                cls_label_path = os.path.join(cls_path, "GT")
+                tmp_list = os.listdir(cls_img_path)
                 tmp_list.sort()
                 for filename in tmp_list:
                     self.video_filelist[cls].append((
-                        os.path.join(cls_img_path,filename),
-                        os.path.join(cls_label_path,filename.replace(".jpg",".png"))
+                        os.path.join(cls_img_path, filename),
+                        os.path.join(cls_label_path, filename.replace(".jpg", ".png"))
                     ))
 
-            # emsemble
+            # ensemble
             for cls in cls_list:
                 li = self.video_filelist[cls]
-                for begin in range(1, len(li)-(self.time_clips-1)*time_interval-1):
-                    batch_clips=[]
-                    #batch_clips.append(li[0])
+                for begin in range(1, len(li) - (self.time_clips - 1) * time_interval - 1):
+                    batch_clips = []
+                    # batch_clips.append(li[0])
                     for t in range(self.time_clips):
-                        batch_clips.append(li[begin+time_interval*t])
+                        batch_clips.append(li[begin + time_interval * t])
                     # batch_clips.append(li[-1])
                     self.video_train_list.append(batch_clips)
-            self.img_label_transform=transform
+            self.img_label_transform = transform
 
     def __getitem__(self, idx):
         img_label_li = self.video_train_list[idx]
@@ -125,7 +126,7 @@ def get_video_dataset():
     return train_loader
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     statistics = torch.load(config.data_statistics)
     trsf_main = Compose_imglabel([
         Resize_video(config.size[0], config.size[1]),

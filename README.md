@@ -11,7 +11,9 @@
 > [Debesh Jha](https://www.simula.no/people/debesh), &
 > [Ling Shao](http://www.inceptioniai.org/).
 
-This repository provides code for "_**PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" MICCAI-2021 ([arXiv Version]() | [中文版]()). If you have any questions about our paper, feel free to contact me. And if you are using PraNet or evaluation toolbox for your research, please cite this paper ([BibTeX](#4-citation)).
+This repository provides code for "_**PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" MICCAI-2021 ([arXiv Version]() | [中文版]()). 
+If you have any questions about our paper, feel free to contact me.
+And if you like our PNS-Net or evaluation toolbox for your personal research, please cite this paper ([BibTeX](#4-citation)).
 
 ## Hightlights
 
@@ -110,24 +112,28 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     + Installing necessary packages PyTorch 1.1: 
       
     ```bash
+    conda create -n PNSNet python=3.6
+    conda activate PNSNet
     conda install pytorch=1.1.0 torchvision -c pytorch
     pip install tensorboardX tqdm Pillow==6.2.2
+    pip install git+https://github.com/pytorch/tnt.git@master
     ```
     
-    + Please ensure the base [CUDA toolkit](https://developer.nvidia.com/cuda-toolkit-archive) version is 10.x (not at conda env), and then build the NS Block: 
+    + Our core design is build on CUDA OP with torchlib. 
+      Please ensure the base [CUDA toolkit](https://developer.nvidia.com/cuda-toolkit-archive) 
+      version is 10.x (not at conda env), and then build the NS Block: 
 
     ```bash
-    pip install git+https://github.com/pytorch/tnt.git@master
-    cd lib/PNS
+    cd ./lib/PNS
     python setup.py build develop
     ```
 
 1. Downloading necessary data:
 
-    + downloading testing dataset and move it into `./dataset/IVPS-TrainSet/*` and `./dataset/VPS-TrainSet/*`, 
+    + downloading training dataset and move it into `./dataset/IVPS-TrainSet/*` and `./dataset/VPS-TrainSet/*`, 
     which can be found in this [download link (Google Drive)]().
     
-    + downloading training dataset and move it into `./dataset/VPS-TestSet/*`, 
+    + downloading testing dataset and move it into `./dataset/VPS-TestSet/*`, 
     which can be found in this [download link (Google Drive)]().
     
     + downloading pretrained weights and move it into `snapshot/ours/PNS.pth`, 
@@ -135,9 +141,9 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
        
 1. Training Configuration:
 
-    + Run `MyTrain_finetune.py`.
+    + First, run `python MyTrain_Pretrain.py` in terminal for pretraining, and then, run `python MyTrain_finetune.py` for finetuning.
     
-    + Just enjoy it!
+    + Just enjoy it! Finish it and the snapshot would save in `./snapshot/PNS-Net/*`.
 
 1. Testing Configuration:
 
@@ -145,16 +151,13 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     just run `MyTest_finetune.py` to generate the final prediction map in `./res`.
     
     + Just enjoy it!
+    
+    + The prediction results of all competitors, and our PNS-Net can be found at [link]().
 
 ### 3.2 Evaluating your trained model:
 
-One-key evaluation is written in MATLAB code ([link]()), 
+One-key evaluation is written in MATLAB code ([link](https://github.com/GewelsJI/PNS-Net/tree/main/eval)), 
 please follow this the instructions in `./eval/main_VPS.m` and just run it to generate the evaluation results in `./eval-Result/`.
-The complete evaluation toolbox (including data, map, eval code, and res): [link](). 
-
-### 3.3 Pre-computed maps: 
-They can be found in [download link]().
-
 
 ## 4. Citation
 

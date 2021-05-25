@@ -2,7 +2,7 @@ import os
 import torch
 import torch.nn.functional as F
 from datetime import datetime
-from lib.PNS_Network import Fastnet as Network
+from lib.PNS_Network import PNSNet as Network
 from utils.dataloader import get_pretrain_dataset
 from utils.utils import clip_gradient, adjust_lr
 import logging
@@ -61,7 +61,7 @@ def train(train_loader, model, optimizer, epoch, save_path):
 
         os.makedirs(os.path.join(save_path, "epoch_%d" % (epoch + 1)), exist_ok=True)
         save_root = os.path.join(save_path, "epoch_%d" % (epoch + 1))
-        torch.save(model.state_dict(), os.path.join(save_root, "PNS_Finetune.pth"))
+        torch.save(model.state_dict(), os.path.join(save_root, "PNS-Pretrain.pth"))
 
     except KeyboardInterrupt:
         print('Keyboard Interrupt: save model and exit.')
@@ -110,7 +110,7 @@ if __name__ == '__main__':
     train_loader = data.DataLoader(dataset=train_loader,
                                    batch_size=config.video_batchsize,
                                    shuffle=True,
-                                   num_workers=2,
+                                   num_workers=4,
                                    pin_memory=False)
 
     total_step = len(train_loader)
@@ -121,8 +121,9 @@ if __name__ == '__main__':
                         level=logging.INFO, filemode='a', datefmt='%Y-%m-%d %I:%M:%S %p')
     logging.info("Network-Train")
     logging.info('Config: epoch: {}; lr: {}; batchsize: {}; trainsize: {}; clip: {}; decay_rate: {}; '
-                 'save_path: {}; decay_epoch: {}'.format(config.finetune_epoches, config.base_lr, config.video_batchsize, config.size, config.clip,
-                                                         config.decay_rate, config.save_path, config.decay_epoch))
+                 'save_path: {}; decay_epoch: {}'.format(config.finetune_epoches, config.base_lr, config.video_batchsize,
+                                                         config.size, config.clip, config.decay_rate, config.save_path,
+                                                         config.decay_epoch))
 
     step = 0
     best_mae = 1

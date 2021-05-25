@@ -164,7 +164,7 @@ please follow this the instructions in `./eval/main_VPS.m` and just run it to ge
 Please cite our paper if you find the work useful: 
     
     @article{ji2021pnsnet,
-    title={PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation},
+    title={Progressively Normalized Self-Attention Network for Video Polyp Segmentation},
     author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Jha, Debesh and Fu, Huazhu and Shao, Ling},
     journal={MICCAI},
     year={2021}

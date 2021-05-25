@@ -1,6 +1,6 @@
 import os
 from torch.utils.data import Dataset
-from dataset.preprocess import *
+from utils.preprocess import *
 from PIL import Image
 import torch
 from config import config

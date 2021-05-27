@@ -11,11 +11,11 @@
 > [Debesh Jha](https://www.simula.no/people/debesh), &
 > [Ling Shao](http://www.inceptioniai.org/).
 
-This repository provides code for "_**PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" published at the MICCAI-2021 conference ([arXiv Version](https://arxiv.org/abs/2105.08468) | [中文版]()). 
+This repository provides code for "_**PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" published at the MICCAI-2021 conference ([arXiv Version](https://arxiv.org/abs/2105.08468) | [中文版 (coming...)]()). 
 If you have any questions about our paper, feel free to contact me.
 And if you like our PNS-Net or evaluation toolbox for your personal research, please cite this paper ([BibTeX](#4-citation)).
 
-## Hightlights
+## Features
 
 - **Hyper Real-time Speed**: Our method, named Progressively Normalized Self-Attention Network (PNS-Net), can efficiently learn representations from polyp videos with real-time speed (~140fps) on a single NVIDIA RTX 2080 GPU without any post-processing techniques (_e.g._, Dense-CRF).
 - **Plug-and-Play Module**: The proposed core module, termed Normalized Self-attention (NS), utilizes channel split,query-dependent, and normalization rules to reduce the computational cost and improve the accuracy, respectively. Note that this module can be flexibly plugged into any framework customed.
@@ -23,6 +23,7 @@ And if you like our PNS-Net or evaluation toolbox for your personal research, pl
 - **One-key Evaluation Toolbox**: We release the first one-key evaluation toolbox in the VPS field.
 
 ### 1.1. 🔥NEWS🔥 :
+- [2021/05/27] Uploading the training/testing dataset, snapshot, and benchmarking results.
 - [2021/05/14] Our work is provisionally accepted at [MICCAI 2021](https://miccai2021.org/en/). Many thanks to my collaborator Yu-Cheng Chou and supervisor Prof. Deng-Ping Fan.
 - [2021/03/10] Create repository.
 
@@ -129,15 +130,12 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     ```
 
 1. Downloading necessary data:
-
-    + downloading training dataset and move it into `./dataset/IVPS-TrainSet/*` and `./dataset/VPS-TrainSet/*`, 
-    which can be found in this [download link (Google Drive)]().
     
-    + downloading testing dataset and move it into `./dataset/VPS-TestSet/*`, 
-    which can be found in this [download link (Google Drive)]().
+    + downloading the training/testing dataset and move it into `./dataset/*`, 
+      which can be found in this [download link (Google Drive, 2GB)](https://drive.google.com/file/d/1NuXYxgulyw3LdskK9svH1rg0E4Dqh69n/view?usp=sharing).
     
     + downloading pretrained weights and move it into `snapshot/ours/PNS.pth`, 
-    which can be found in this [download link (Google Drive)]().
+    which can be found in this [download link (Google Drive, 99MB)](https://drive.google.com/file/d/1YCP8g_Zc-uuqJhYt81U3sxxJbZy0FDiS/view?usp=sharing).
        
 1. Training Configuration:
 
@@ -152,7 +150,7 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     
     + Just enjoy it!
     
-    + The prediction results of all competitors, and our PNS-Net can be found at [link]().
+    + The prediction results of all competitors, and our PNS-Net can be found at [Google Drive (7MB)](https://drive.google.com/file/d/1Jn4EjnGC37WOfNjCGhxsEY7t26Brx6YV/view?usp=sharing).
 
 ### 3.2 Evaluating your trained model:
 

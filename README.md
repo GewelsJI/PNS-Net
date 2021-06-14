@@ -164,7 +164,7 @@ Please cite our paper if you find the work useful:
     @inproceedings{ji2021pnsnet,
       title={Progressively Normalized Self-Attention Network for Video Polyp Segmentation},
       author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Jha, Debesh and Fu, Huazhu and Shao, Ling},
-      journal={MICCAI},
+      booktitle={MICCAI},
       year={2021}
     }
 

@@ -2,7 +2,7 @@
 
 <img src="./imgs/VideoPresentation-min.gif" width="100%" />
 
-> **Authors:** 
+> **Authors:**
 > [Ge-Peng Ji*](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
 > [Yu-Cheng Chou*](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en), 
 > [Deng-Ping Fan](https://dpfan.net/), 

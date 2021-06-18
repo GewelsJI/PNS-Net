@@ -1,4 +1,4 @@
-# Progressively Normalized Self-Attention Network for Video Polyp Segmentation
+# 2021-MICCAI-Progressively Normalized Self-Attention Network for Video Polyp Segmentation
 
 <img src="./imgs/VideoPresentation-min.gif" width="100%" />
 

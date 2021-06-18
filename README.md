@@ -23,6 +23,8 @@ And if you like our PNS-Net or evaluation toolbox for your personal research, pl
 - **One-key Evaluation Toolbox**: We release the first one-key evaluation toolbox in the VPS field.
 
 ### 1.1. 🔥NEWS🔥 :
+
+- [2021/06/18]:fire: Release the inference code! The whole project will be available at the time of MICCAI-2021.
 - [2021/06/18] The chinese translation of our paper is coming, please enjoy it [[pdf](http://dpfan.net/wp-content/uploads/2021MICCAIProgressively-Normalized-Self-Attention-Network-for-Video-Polyp-Segmentation-CN.pdf)].
 - [2021/05/27] Uploading the training/testing dataset, snapshot, and benchmarking results.
 - [2021/05/14] Our work is provisionally accepted at [MICCAI 2021](https://miccai2021.org/en/). Many thanks to my collaborator Yu-Cheng Chou and supervisor Prof. Deng-Ping Fan.

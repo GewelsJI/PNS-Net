@@ -24,8 +24,9 @@ And if you like our PNS-Net or evaluation toolbox for your personal research, pl
 
 ### 1.1. 🔥NEWS🔥 :
 
+- [2021/06/19]:fire: A short introduction video of our paper is available on my [YouTube channel](https://youtu.be/JxhoDcg1l78).
 - [2021/06/18]:fire: Release the inference code! The whole project will be available at the time of MICCAI-2021.
-- [2021/06/18] The chinese translation of our paper is coming, please enjoy it [[pdf](http://dpfan.net/wp-content/uploads/2021MICCAIProgressively-Normalized-Self-Attention-Network-for-Video-Polyp-Segmentation-CN.pdf)].
+- [2021/06/18] The Chinese translation of our paper is coming, please enjoy it [[pdf](http://dpfan.net/wp-content/uploads/2021MICCAIProgressively-Normalized-Self-Attention-Network-for-Video-Polyp-Segmentation-CN.pdf)].
 - [2021/05/27] Uploading the training/testing dataset, snapshot, and benchmarking results.
 - [2021/05/14] Our work is provisionally accepted at [MICCAI 2021](https://miccai2021.org/en/). Many thanks to my collaborator Yu-Cheng Chou and supervisor Prof. Deng-Ping Fan.
 - [2021/03/10] Create repository.
@@ -70,11 +71,11 @@ doi: https://arxiv.org/pdf/1505.04597.pdf
 ### 2.1. Introduction
 
 Existing video polyp segmentation (VPS) models typically employ convolutional neural networks (CNNs) to extract features. 
-However, due to their limited receptive fields, CNNs can not fully exploit the global temporal and spatial information in successive video frames, resulting in false positive segmentation results. 
+However, due to their limited receptive fields, CNNs can not fully exploit the global temporal and spatial information in successive video frames, resulting in false-positive segmentation results. 
 In this paper, we propose the novel PNS-Net (Progressively Normalized Self-attention Network), which can efficiently learn representations from polyp videos with real-time speed (~140fps) on a single RTX 2080 GPU and no post-processing. 
 
 Our PNS-Net is based solely on a basic normalized self-attention block, dispensing with recurrence and CNNs entirely. Experiments on challenging VPS datasets demonstrate that the proposed PNS-Net achieves state-of-the-art performance. 
-We also conduct extensive experiments to study the effectiveness of the channel split, soft-ttention, and progressive learning strategy. 
+We also conduct extensive experiments to study the effectiveness of the channel split, soft-attention, and progressive learning strategy. 
 We find that our PNS-Net works well under different settings, making it a promising solution to the VPS task.
 
 ### 2.2. Framework Overview
@@ -123,7 +124,7 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     pip install git+https://github.com/pytorch/tnt.git@master
     ```
     
-    + Our core design is build on CUDA OP with torchlib. 
+    + Our core design is built on CUDA OP with torchlib. 
       Please ensure the base [CUDA toolkit](https://developer.nvidia.com/cuda-toolkit-archive) 
       version is 10.x (not at conda env), and then build the NS Block: 
 
@@ -137,12 +138,12 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     + downloading the training/testing dataset and move it into `./dataset/*`, 
       which can be found in this [download link (Google Drive, 2GB)](https://drive.google.com/file/d/1NuXYxgulyw3LdskK9svH1rg0E4Dqh69n/view?usp=sharing).
     
-    + downloading pretrained weights and move it into `snapshot/ours/PNS.pth`, 
+    + downloading pre-trained weights and move it into `snapshot/ours/PNS.pth`, 
     which can be found in this [download link (Google Drive, 99MB)](https://drive.google.com/file/d/1YCP8g_Zc-uuqJhYt81U3sxxJbZy0FDiS/view?usp=sharing).
        
 1. Training Configuration:
 
-    + First, run `python MyTrain_Pretrain.py` in terminal for pretraining, and then, run `python MyTrain_finetune.py` for finetuning.
+    + First, run `python MyTrain_Pretrain.py` in the terminal for pretraining, and then, run `python MyTrain_finetune.py` for finetuning.
     
     + Just enjoy it! Finish it and the snapshot would save in `./snapshot/PNS-Net/*`.
 
@@ -153,7 +154,7 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     
     + Just enjoy it!
     
-    + The prediction results of all competitors, and our PNS-Net can be found at [Google Drive (7MB)](https://drive.google.com/file/d/1Jn4EjnGC37WOfNjCGhxsEY7t26Brx6YV/view?usp=sharing).
+    + The prediction results of all competitors and our PNS-Net can be found at [Google Drive (7MB)](https://drive.google.com/file/d/1Jn4EjnGC37WOfNjCGhxsEY7t26Brx6YV/view?usp=sharing).
 
 ### 3.2 Evaluating your trained model:
 
@@ -196,7 +197,7 @@ etc.)
 
 ## 6. FAQ
 
-1. If the image cannot be loaded in the page (mostly in the domestic network situations).
+1. If the image cannot be loaded on the page (mostly in the domestic network situations).
 
     [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
 
@@ -206,4 +207,4 @@ etc.)
 
 This code is built on SINetV2 ([PyTorch](https://github.com/GewelsJI/SINet-V2)) and PyramidCSA ([PyTorch](https://github.com/guyuchao/PyramidCSA)). We thank the authors for sharing the codes.
 
-**[⬆ back to top](#0-preface)**
+**[⬆ back to top](#0-preface)** 

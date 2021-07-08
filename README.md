@@ -24,7 +24,7 @@ And if you like our PNS-Net or evaluation toolbox for your personal research, pl
 
 ### 1.1. 🔥NEWS🔥 :
 
-- [2021/06/25]:fire: Our paper have been selected to receive a [MICCAI Student Travel Award](http://miccai.org/about-miccai/awards/student-travel-awards/).
+- [2021/06/25]:fire: Our paper have been elected to be honred a [MICCAI Student Travel Award](http://miccai.org/about-miccai/awards/student-travel-awards/).
 - [2021/06/19]:fire: A short introduction of our paper is available on my [YouTube channel (2min)](https://youtu.be/JxhoDcg1l78).
 - [2021/06/18] Release the inference code! The whole project will be available at the time of MICCAI-2021.
 - [2021/06/18] The Chinese translation of our paper is coming, please enjoy it [[pdf](http://dpfan.net/wp-content/uploads/2021MICCAIProgressively-Normalized-Self-Attention-Network-for-Video-Polyp-Segmentation-CN.pdf)].

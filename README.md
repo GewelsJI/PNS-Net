@@ -54,18 +54,6 @@ And if you like our PNS-Net or evaluation toolbox for your personal research, pl
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-### 1.3. State-of-the-art Approaches  
-1. "PraNet: Parallel Reverse Attention Network for Polyp Segmentation" MICCAI, 2020.
-doi: https://arxiv.org/pdf/2006.11392.pdf
-2. "Adaptive context selection for polyp segmentation" MICCAI, 2020.
-doi: https://link.springer.com/chapter/10.1007/978-3-030-59725-2_25
-3. "Resunet++: An advanced architecture for medical image segmentation" IEEE ISM, 2019
-doi: https://arxiv.org/pdf/1911.07067.pdf
-4. "Unet++: A nested u-net architecture for medical image segmentation" IEEE TMI, 2019
-doi: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7329239/
-5. "U-Net: Convolutional networks for biomed- ical image segmentation" MICCAI, 2015.
-doi: https://arxiv.org/pdf/1505.04597.pdf
-
 
 ## 2. Overview
 

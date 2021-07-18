@@ -143,7 +143,7 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     
     + Just enjoy it!
     
-    + The prediction results of all competitors and our PNS-Net can be found at [Google Drive (7MB)](https://drive.google.com/file/d/1Jn4EjnGC37WOfNjCGhxsEY7t26Brx6YV/view?usp=sharing).
+    + The prediction results of all competitors and our PNS-Net can be found at [Google Drive (7MB)](https://drive.google.com/file/d/1iCZiTS4n-5ZSnCozLBi-1gpbuzjORx4z/view?usp=sharing).
 
 ### 3.2 Evaluating your trained model:
 

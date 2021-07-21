@@ -129,12 +129,6 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     
     + downloading pre-trained weights and move it into `snapshot/ours/PNS.pth`, 
     which can be found in this [download link (Google Drive, 99MB)](https://drive.google.com/file/d/1YCP8g_Zc-uuqJhYt81U3sxxJbZy0FDiS/view?usp=sharing).
-       
-1. Training Configuration:
-
-    + First, run `python MyTrain_Pretrain.py` in the terminal for pretraining, and then, run `python MyTrain_finetune.py` for finetuning.
-    
-    + Just enjoy it! Finish it and the snapshot would save in `./snapshot/PNS-Net/*`.
 
 1. Testing Configuration:
 

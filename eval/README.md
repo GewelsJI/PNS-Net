@@ -6,9 +6,9 @@ Our project page is at [website](http://dpfan.net/pranet/).
 
 # Usage
 
-Please set the candidate method and dataset name in [Line-26](https://github.com/GewelsJI/PNS-Net/blob/7c3996afa3aeacad2316d76b7b4747c8579a9b35/eval/main_VPS.m#L26) and [Line-28](https://github.com/GewelsJI/PNS-Net/blob/7c3996afa3aeacad2316d76b7b4747c8579a9b35/eval/main_VPS.m#L28), respectively. 
+Please set the candidate list of method and dataset in [Line-26](https://github.com/GewelsJI/PNS-Net/blob/7c3996afa3aeacad2316d76b7b4747c8579a9b35/eval/main_VPS.m#L26) and [Line-28](https://github.com/GewelsJI/PNS-Net/blob/7c3996afa3aeacad2316d76b7b4747c8579a9b35/eval/main_VPS.m#L28), respectively. 
 You guys first need to install the Matlab first.
-To this end， you just run 
+To this end， you just run:
 
 ```bash
 cd eval 

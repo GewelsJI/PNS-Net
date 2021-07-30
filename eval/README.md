@@ -28,4 +28,4 @@ It can only be used for non-comercial purpose. If you like our work, please cite
 
 ## 7. Acknowledgements
 
-This code is adopted from [DAVSOD](https://github.com/DengPingFan/DAVSOD), and many thank to [Deng-Ping Fan]().
+This code is heavily adopted from the evaluation toolbox from [DAVSOD](https://github.com/DengPingFan/DAVSOD), and many thank to [Deng-Ping Fan](https://scholar.google.com/citations?user=kakwJ5QAAAAJ&hl=en) for his pretty nice work.

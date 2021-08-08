@@ -160,9 +160,7 @@ Please cite our paper if you find the work useful:
 
 - If you want to improve the usability or any piece of advice, please feel free to contact me directly ([E-mail](gepengai.ji@gmail.com)).
 
-- If the image cannot be loaded on the page (mostly in the domestic network situations).
-
-    [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
+- If the image cannot be loaded on the page (mostly in the domestic network situations)： [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
 
 ---
 

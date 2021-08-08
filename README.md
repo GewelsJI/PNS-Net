@@ -156,32 +156,11 @@ Please cite our paper if you find the work useful:
       year={2021}
     }
 
-## 5. TODO LIST
+## 5. FAQ
 
-> If you want to improve the usability or any piece of advice, please feel free to contact me directly ([E-mail](gepengai.ji@gmail.com)).
+- If you want to improve the usability or any piece of advice, please feel free to contact me directly ([E-mail](gepengai.ji@gmail.com)).
 
-- [ ] Support `NVIDIA APEX` training.
-
-- [ ] Support different backbones (
-VGGNet, 
-ResNet, 
-[ResNeXt](https://github.com/facebookresearch/ResNeXt),
-[iResNet](https://github.com/iduta/iresnet), 
-and 
-[ResNeSt](https://github.com/zhanghang1989/ResNeSt) 
-etc.)
-
-- [ ] Support distributed training.
-
-- [ ] Support lightweight architecture and real-time inference, like MobileNet, SqueezeNet.
-
-- [ ] Support distributed training
-
-- [ ] Add more comprehensive competitors.
-
-## 6. FAQ
-
-1. If the image cannot be loaded on the page (mostly in the domestic network situations).
+- If the image cannot be loaded on the page (mostly in the domestic network situations).
 
     [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
 

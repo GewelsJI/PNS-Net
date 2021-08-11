@@ -13,7 +13,7 @@
 %    year = {2021}
 % }
 % 
-% For any questions, please contact Deng-Ping Fan (dengpingfan@mail.nankai.edu.cn)
+% For any questions, please contact Ge-Peng Ji (gepengai.ji@gmail.com)
 %
 % Version Control:
 % % 2021-03-01, Create the init version

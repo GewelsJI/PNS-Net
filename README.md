@@ -164,7 +164,7 @@ Please cite our paper if you find the work useful:
 
 ---
 
-## 7. Acknowledgements
+## 6. Acknowledgements
 
 This code is built on SINetV2 ([PyTorch](https://github.com/GewelsJI/SINet-V2)) and PyramidCSA ([PyTorch](https://github.com/guyuchao/PyramidCSA)). We thank the authors for sharing the codes.
 

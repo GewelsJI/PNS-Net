@@ -18,7 +18,7 @@ parser.add_argument('--log_inteval', type=int, default=50)
 
 # data
 parser.add_argument('--data_statistics', type=str,
-                    default="dataset/statistics.pth")
+                    default="utils/statistics.pth", help='The normalization statistics.')
 parser.add_argument('--img_dataset_list', type=str,
                     default=["IVPS-TrainSet"])
 parser.add_argument('--video_dataset_list', type=str,
@@ -35,6 +35,6 @@ parser.add_argument('--video_time_clips', type=int, default=5)
 parser.add_argument('--video_testset_root', type=str, default="dataset/VPS-TestSet/")
 
 # pretrain
-parser.add_argument('--pretrain_state_dict', type=str, default="lib/statedict/PNS_Pretrain.pth")
+parser.add_argument('--pretrain_state_dict', type=str, default="your_pretrain_pth")
 parser.add_argument('--save_path', type=str, default='snapshot/PNS/')
 config = parser.parse_args()

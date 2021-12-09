@@ -24,6 +24,7 @@ And if you like our PNS-Net or evaluation toolbox for your personal research, pl
 
 ### 1.1. 🔥NEWS🔥 :
 
+- [2021/12/09] The pretraining & training code is released. Please enjoy it.
 - [2021/07/09] 「MICCAI 2021 | 超实时140FPS ！PNS-Net：从视频中分割息肉」 [TechBeat中文解读](https://www.techbeat.net/article-info?id=2471).
 - [2021/06/25]:fire: Our paper have been elected to be honred a [MICCAI Student Travel Award](http://miccai.org/about-miccai/awards/student-travel-awards/).
 - [2021/06/19]:fire: A short introduction of our paper is available on my [YouTube channel (2min)](https://youtu.be/JxhoDcg1l78).
@@ -137,6 +138,13 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     + Just enjoy it!
     
     + The prediction results of all competitors and our PNS-Net can be found at [Google Drive (7MB)](https://drive.google.com/file/d/1iCZiTS4n-5ZSnCozLBi-1gpbuzjORx4z/view?usp=sharing).
+
+2. Training Configuration:
+    
+    + With the training dataset downloaded, you can pre-train the model first then fine-tune with the pre-trained weights,
+    just run `MyTrain_Pretrain.py` firstly and `MyTrain_Finetune.py` secondly.
+    
+    + Remember to configure the `pretrain_state_dict` in `config.py` for different training stages.      
 
 ### 3.2 Evaluating your trained model:
 

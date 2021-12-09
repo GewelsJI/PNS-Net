@@ -24,7 +24,6 @@ And if you like our PNS-Net or evaluation toolbox for your personal research, pl
 
 ### 1.1. 🔥NEWS🔥 :
 
-- 
 - [2021/07/09] 「MICCAI 2021 | 超实时140FPS ！PNS-Net：从视频中分割息肉」 [TechBeat中文解读](https://www.techbeat.net/article-info?id=2471).
 - [2021/06/25]:fire: Our paper have been elected to be honred a [MICCAI Student Travel Award](http://miccai.org/about-miccai/awards/student-travel-awards/).
 - [2021/06/19]:fire: A short introduction of our paper is available on my [YouTube channel (2min)](https://youtu.be/JxhoDcg1l78).

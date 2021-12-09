@@ -24,6 +24,7 @@ And if you like our PNS-Net or evaluation toolbox for your personal research, pl
 
 ### 1.1. 🔥NEWS🔥 :
 
+- 
 - [2021/07/09] 「MICCAI 2021 | 超实时140FPS ！PNS-Net：从视频中分割息肉」 [TechBeat中文解读](https://www.techbeat.net/article-info?id=2471).
 - [2021/06/25]:fire: Our paper have been elected to be honred a [MICCAI Student Travel Award](http://miccai.org/about-miccai/awards/student-travel-awards/).
 - [2021/06/19]:fire: A short introduction of our paper is available on my [YouTube channel (2min)](https://youtu.be/JxhoDcg1l78).
@@ -36,11 +37,10 @@ And if you like our PNS-Net or evaluation toolbox for your personal research, pl
 
 ### 1.2. Table of Contents
 
-- [PNS-Net: Progressively Normalized Self-Attention Network for Video Polyp Segmentation](#pns-net-progressively-normalized-self-attention-network-for-video-polyp-segmentation)
-  - [Hightlights](#hightlights)
+- [2021Progressively Normalized Self-Attention Network for Video Polyp Segmentation](#2021pns-netprogressively-normalized-self-attention-network-for-video-polyp-segmentation)
+  - [Features](#features)
     - [1.1. 🔥NEWS🔥 :](#11-news-)
     - [1.2. Table of Contents](#12-table-of-contents)
-    - [1.3. State-of-the-art Approaches](#13-state-of-the-art-approaches)
   - [2. Overview](#2-overview)
     - [2.1. Introduction](#21-introduction)
     - [2.2. Framework Overview](#22-framework-overview)
@@ -48,10 +48,9 @@ And if you like our PNS-Net or evaluation toolbox for your personal research, pl
   - [3. Proposed Baseline](#3-proposed-baseline)
     - [3.1. Training/Testing](#31-trainingtesting)
     - [3.2 Evaluating your trained model:](#32-evaluating-your-trained-model)
-    - [3.3 Pre-computed maps:](#33-pre-computed-maps)
   - [4. Citation](#4-citation)
-  - [5. TODO LIST](#5-todo-list)
-  - [6. FAQ](#6-faq)
+  - [5. FAQ](#5-faq)
+  - [6. Acknowledgements](#6-acknowledgements)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 

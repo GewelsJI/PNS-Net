@@ -149,7 +149,7 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
 ### 3.2 Evaluating your trained model:
 
 One-key evaluation is written in MATLAB code ([link](https://github.com/GewelsJI/PNS-Net/tree/main/eval)), 
-please follow this the instructions in `./eval/main_VPS.m` and just run it to generate the evaluation results in `./eval-Result/`.
+please follow the instructions in `./eval/main_VPS.m` and just run it to generate the evaluation results in `./eval-Result/`.
 
 **NOTE:** The different strategies of the sequential model may generate a various number of predictions, such as optical flow based method only generates T-1 frames due to forward/backward frame-difference strategy. Thus, we test the T-2 frames by removing the first and end frames for a fair comparison.
 

@@ -48,7 +48,7 @@ class Test_Dataset(Dataset):
         # ensemble
         for cls in cls_list:
             li = self.video_filelist[cls]
-            begin = 1
+            begin = 0   # change for inference from frist frame
             while begin < len(li) - 1:
                 if len(li) - 1 - begin <= self.time_clips:
                     begin = len(li) - self.time_clips

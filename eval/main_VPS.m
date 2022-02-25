@@ -17,7 +17,7 @@
 %
 % Version Control:
 % % 2021-03-01, Create the init version
-% This code is adopted from [DAVSOD](https://github.com/DengPingFan/DAVSOD) and re-organized by GePeng-Ji.
+% This code is borrowed from [DAVSOD](https://github.com/DengPingFan/DAVSOD) and re-organized by GePeng-Ji.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear; close; clc;

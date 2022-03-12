@@ -6,12 +6,12 @@
 % Project Page: https://github.com/GewelsJI/PNS-Net
 %
 % It can only be used for non-comercial purpose. If you like our work, please cite our paper.
-% @InProceedings{Ji_2021_Progressively,
-%    author = {Fan, Deng-Ping and Wang, Wenguan and Cheng, Ming-Ming and Shen, Jianbing}, 
-%    title = {Progressively Normalized Self-Attention Network for Video Polyp Segmentation},
-%    booktitle = {MICCAI},
-%    year = {2021}
-% }
+%@inproceedings{ji2021pnsnet,
+%  title={Progressively Normalized Self-Attention Network for Video Polyp Segmentation},
+%  author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Jha, Debesh and Fu, Huazhu and Shao, Ling},
+%  booktitle={MICCAI},
+%  year={2021}
+%}
 % 
 % For any questions, please contact Ge-Peng Ji (gepengai.ji@gmail.com)
 %

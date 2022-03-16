@@ -11,7 +11,7 @@
 > [Debesh Jha](https://www.simula.no/people/debesh), &
 > [Ling Shao](http://www.inceptioniai.org/).
 
-This repository provides code for paper "_**Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" published at the MICCAI-2021 conference ([arXiv Version](https://arxiv.org/abs/2105.08468) | [中文版](http://dpfan.net/wp-content/uploads/2021MICCAIProgressively-Normalized-Self-Attention-Network-for-Video-Polyp-Segmentation-CN.pdf)). 
+This repository provides code for paper "_**Progressively Normalized Self-Attention Network for Video Polyp Segmentation**_" published at the MICCAI-2021 conference ([arXiv Version](https://arxiv.org/abs/2105.08468)). 
 If you have any questions about our paper, feel free to contact me.
 And if you like our PNS-Net or evaluation toolbox for your personal research, please cite this paper ([BibTeX](#4-citation)).
 

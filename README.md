@@ -24,7 +24,7 @@ And if you like our PNS-Net or evaluation toolbox for your personal research, pl
 
 ### 1.1. 🔥NEWS🔥 :
 
-- [2022/03/27] :boom: Our new task about **Video Polyp Segmentation (VPS)** has been released. [ProjectLink](https://github.com/GewelsJI/VPS)/ [PDF](https://arxiv.org/abs/2203.14291).
+- [2022/03/27] :boom: We release a new large-scale dataset on **Video Polyp Segmentation (VPS)** task, please enjoy it. [ProjectLink](https://github.com/GewelsJI/VPS)/ [PDF](https://arxiv.org/abs/2203.14291).
 - [2021/12/09] The pretraining & training code is released. Please enjoy it.
 - [2021/07/09] 「MICCAI 2021 | 超实时140FPS ！PNS-Net：从视频中分割息肉」 [TechBeat中文解读](https://www.techbeat.net/article-info?id=2471).
 - [2021/06/25]:fire: Our paper have been elected to be honred a [MICCAI Student Travel Award](http://miccai.org/about-miccai/awards/student-travel-awards/).

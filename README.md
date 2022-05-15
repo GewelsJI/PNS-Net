@@ -178,6 +178,7 @@ Please cite our paper if you find the work useful:
 
 - If the image cannot be loaded on the page (mostly in the domestic network situations)： [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
 
+- Thanks to [Tuo Wang (王拓)](victor_wt@qq.com) for providing a great solution to [upgrade the CUDA version when compling the NS block](./docs/Upgrade%20environment%20for%20NS%20block.pdf). 
 ---
 
 ## 6. Acknowledgements

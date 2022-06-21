@@ -176,9 +176,10 @@ Please cite our paper if you find the work useful:
 
 - If you want to improve the usability or any piece of advice, please feel free to contact me directly ([E-mail](gepengai.ji@gmail.com)).
 
-- If the image cannot be loaded on the page (mostly in the domestic network situations)： [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
+- If the image cannot be loaded on the page (mostly in the domestic network situations): [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
 
-- Thanks to [Tuo Wang (王拓)](victor_wt@qq.com) for providing a great solution to [upgrade the CUDA version when compling the NS block](./docs/Upgrade%20environment%20for%20NS%20block.pdf). 
+- Thanks to [Tuo Wang](victor_wt@qq.com) for providing a great solution to [upgrade the CUDA version when compling the NS block](./docs/Upgrade%20environment%20for%20NS%20block.pdf).
+
 ---
 
 ## 6. Acknowledgements

@@ -126,10 +126,10 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
 1. Downloading necessary data:
     
     + downloading the training/testing dataset and move it into `./dataset/*`, 
-      which can be found in this [download link (Google Drive, 2GB)](https://drive.google.com/file/d/1NuXYxgulyw3LdskK9svH1rg0E4Dqh69n/view?usp=sharing).
+      which can be found in this [download link (OneDrive, 2GB)](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/ETQf1m5ZD4JHp2GfzDj7Y20BocSwiqohwxJzTP65qasi4A?e=01gxcp).
     
     + downloading pre-trained weights and move it into `snapshot/ours/PNS.pth`, 
-    which can be found in this [download link (Google Drive, 99MB)](https://drive.google.com/file/d/1YCP8g_Zc-uuqJhYt81U3sxxJbZy0FDiS/view?usp=sharing).
+    which can be found in this [download link (OneDrive, 99MB)](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EZulcqOTTHBIomqeVDSCCc4BSeJU7hszolG8EaD5DpTw-Q?e=qIIyLt).
 
 1. Testing Configuration:
 
@@ -138,7 +138,7 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     
     + Just enjoy it!
     
-    + The prediction results of all competitors and our PNS-Net can be found at [Google Drive (7MB)](https://drive.google.com/file/d/1iCZiTS4n-5ZSnCozLBi-1gpbuzjORx4z/view?usp=sharing).
+    + The prediction results of all competitors and our PNS-Net can be found at [OneDrive (7MB)](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/Ec7JRiIQPH5OrfhZymPflEsBwmdBcW-iRDoDXo2R4lT_Yg?e=WSo8IP).
 
 2. Training Configuration:
     

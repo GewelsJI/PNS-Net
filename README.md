@@ -158,23 +158,23 @@ please follow the instructions in `./eval/main_VPS.m` and just run it to generat
 
 Please cite our paper if you find the work useful: 
     
-  @inproceedings{ji2021progressively,
-    title={Progressively normalized self-attention network for video polyp segmentation},
-    author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Fu, Huazhu and Jha, Debesh and Shao, Ling},
-    booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
-    pages={142--152},
-    year={2021},
-    organization={Springer}
-  }
-    
-  @inproceedings{fan2020pranet,
-    title={Pranet: Parallel reverse attention network for polyp segmentation},
-    author={Fan, Deng-Ping and Ji, Ge-Peng and Zhou, Tao and Chen, Geng and Fu, Huazhu and Shen, Jianbing and Shao, Ling},
-    booktitle={International conference on medical image computing and computer-assisted intervention},
-    pages={263--273},
-    year={2020},
-    organization={Springer}
-  }
+    @inproceedings{ji2021progressively,
+      title={Progressively normalized self-attention network for video polyp segmentation},
+      author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Fu, Huazhu and Jha, Debesh and Shao, Ling},
+      booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+      pages={142--152},
+      year={2021},
+      organization={Springer}
+    }
+
+    @inproceedings{fan2020pranet,
+      title={Pranet: Parallel reverse attention network for polyp segmentation},
+      author={Fan, Deng-Ping and Ji, Ge-Peng and Zhou, Tao and Chen, Geng and Fu, Huazhu and Shen, Jianbing and Shao, Ling},
+      booktitle={International conference on medical image computing and computer-assisted intervention},
+      pages={263--273},
+      year={2020},
+      organization={Springer}
+    }
 
 ## 5. FAQ
 

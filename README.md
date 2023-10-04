@@ -126,19 +126,17 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
 1. Downloading necessary data:
     
     + downloading the training/testing dataset and move it into `./dataset/*`, 
-      which can be found in this [download link (OneDrive, 2GB)](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/ETQf1m5ZD4JHp2GfzDj7Y20BocSwiqohwxJzTP65qasi4A?e=01gxcp).
+      which can be found in this [download link (Google Drive, 2.23GB)](https://drive.google.com/file/d/1TyaRy4c4nHFDa3o2bOl4dP5Z7wes7HV2/view?usp=sharing).
     
     + downloading pre-trained weights and move it into `snapshot/ours/PNS.pth`, 
-    which can be found in this [download link (OneDrive, 99MB)](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EZulcqOTTHBIomqeVDSCCc4BSeJU7hszolG8EaD5DpTw-Q?e=qIIyLt).
+    which can be found in this [download link (Google Drive, 98.5MB)](https://drive.google.com/file/d/1YVk-UcpjrqTYfmWWyTciLskNRKWYg7qU/view?usp=sharing).
 
 1. Testing Configuration:
 
     + After you download all the pre-trained model and testing dataset, 
     just run `MyTest_finetune.py` to generate the final prediction map in `./res`.
-    
     + Just enjoy it!
-    
-    + The prediction results of all competitors and our PNS-Net can be found at [OneDrive (7MB)](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/Ec7JRiIQPH5OrfhZymPflEsBwmdBcW-iRDoDXo2R4lT_Yg?e=WSo8IP).
+    + The prediction results of all competitors and our PNS-Net can be found at [Google Drive (7.7MB)](https://drive.google.com/file/d/13JPSA6JL1-75ZxHP2vVazsKLjFZt77nw/view?usp=sharing).
 
 2. Training Configuration:
     

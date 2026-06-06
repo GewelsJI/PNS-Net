@@ -136,7 +136,7 @@ a single GeForce RTX 2080 GPU of 8 GB Memory.
     + After you download all the pre-trained model and testing dataset, 
     just run `MyTest_finetune.py` to generate the final prediction map in `./res`.
     + Just enjoy it!
-    + The prediction results of all competitors and our PNS-Net can be found at [Google Drive (7.7MB)](https://drive.google.com/file/d/13JPSA6JL1-75ZxHP2vVazsKLjFZt77nw/view?usp=sharing).
+    + The prediction results of all competitors and our PNS-Net can be found at [Google Drive (7.7MB)](https://drive.google.com/file/d/1vjaJU_rEUzh51Lp9otxhRsfFW-cAqMgk/view?usp=share_link).
 
 2. Training Configuration:
     
